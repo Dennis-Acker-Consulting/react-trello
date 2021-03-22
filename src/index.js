@@ -30,5 +30,5 @@ const DEFAULT_LANG='en'
 export default ({ components, lang=DEFAULT_LANG, ...otherProps }) => {
   deprecationWarnings(otherProps);
   const translate = createTranslate(locales[lang].translation)
-    return (<Board t={translate} components={{ ...DefaultComponents, ...components }} {...otherProps} />);
+  return <Board components={{ ...DefaultComponents, ...components }} {...otherProps} />;
 }
