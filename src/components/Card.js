@@ -60,7 +60,7 @@ class Card extends Component {
         </CardHeader>
         <Detail>
                 {editable ? <InlineInput value={description} border placeholder={t('placeholder.description')} resize='vertical' onSave={(value) => updateCard({ description: value })} /> : description}
-                {editable ? <InlineInput value={description2} border placeholder={t('placeholder.description')} resize='vertical' onSave={(value) => updateCard({ description2: value })} /> : description2}
+                { description2 }
         </Detail>
         {tags && tags.length> 0 && (
           <Footer>
