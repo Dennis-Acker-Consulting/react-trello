@@ -85,6 +85,7 @@ Card.propTypes = {
   title: PropTypes.string.isRequired,
   label: PropTypes.string,
   description: PropTypes.string,
+  description2: PropTypes.string,
   tags: PropTypes.array,
 }
 
