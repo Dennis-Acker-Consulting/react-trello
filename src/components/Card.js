@@ -31,8 +31,8 @@ class Card extends Component {
       id,
       title,
       label,
-        description,
-        description2,
+        product,
+        price,
       tags,
       cardDraggable,
       editable,
@@ -60,8 +60,8 @@ class Card extends Component {
           {showDeleteButton && <DeleteButton onClick={this.onDelete} />}
         </CardHeader>
         <Detail>
-                {editable ? <InlineInput value={description} border placeholder={t('placeholder.description')} resize='vertical' onSave={(value) => updateCard({ description: value })} /> : description}
-                <p>{description2}</p>
+                <p><b>Produkt:</b>{product}</p>
+                <p><b>Preis:</b>{price}</p>
         </Detail>
         {tags && tags.length> 0 && (
           <Footer>
@@ -85,8 +85,8 @@ Card.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   label: PropTypes.string,
-  description: PropTypes.string,
-  description2: PropTypes.string,
+  product: PropTypes.string,
+  price: PropTypes.string,
   tags: PropTypes.array,
 }
 
