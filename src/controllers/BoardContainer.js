@@ -168,7 +168,7 @@ class BoardContainer extends Component {
     ])
 
     return (
-      <components.BoardWrapper style={style} {...otherProps} draggable={false}>
+      <components.BoardWrapper className="BoardWrapper" style={style} {...otherProps} draggable={false}>
         <PopoverWrapper>
           <Container
             orientation="horizontal"

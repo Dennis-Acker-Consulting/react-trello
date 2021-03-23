@@ -80,7 +80,6 @@ export const CustomPopoverContent = styled(PopoverContent)`
 `
 
 export const BoardWrapper = styled.div`
-  background-color: #3179ba;
   overflow-y: hidden;
   padding: 5px;
   color: #393939;
