@@ -88,7 +88,7 @@ class Card extends _react.Component {
       })
     }) : label), showDeleteButton && /*#__PURE__*/_react.default.createElement(_DeleteButton.default, {
       onClick: this.onDelete
-    })), /*#__PURE__*/_react.default.createElement(_Base.Detail, null, /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("b", null, "Produkt:"), product), /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("b", null, "Preis:"), price)), tags && tags.length > 0 && /*#__PURE__*/_react.default.createElement(_Base.Footer, null, tags.map(tag => /*#__PURE__*/_react.default.createElement(_Tag.default, (0, _extends2.default)({
+    })), /*#__PURE__*/_react.default.createElement(_Base.Detail, null, /*#__PURE__*/_react.default.createElement(_Base.LeadProp, null, /*#__PURE__*/_react.default.createElement("b", null, "Produkt:"), product), /*#__PURE__*/_react.default.createElement(_Base.LeadProp, null, /*#__PURE__*/_react.default.createElement("b", null, "Preis:"), price)), tags && tags.length > 0 && /*#__PURE__*/_react.default.createElement(_Base.Footer, null, tags.map(tag => /*#__PURE__*/_react.default.createElement(_Tag.default, (0, _extends2.default)({
       key: tag.title
     }, tag, {
       tagStyle: tagStyle
