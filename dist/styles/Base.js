@@ -7,7 +7,7 @@ var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWild
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.InlineInput = exports.CardForm = exports.NewLaneButtons = exports.NewLaneSection = exports.LaneSection = exports.LaneTitle = exports.AddCardLink = exports.LeadProp = exports.TagSpan = exports.Footer = exports.Detail = exports.CardRightContent = exports.CardTitle = exports.CardHeader = exports.MovableCardWrapper = exports.CardWrapper = exports.RightContent = exports.Title = exports.ScrollableLane = exports.LaneFooter = exports.LaneHeader = exports.Section = exports.Header = exports.BoardWrapper = exports.CustomPopoverContent = exports.CustomPopoverContainer = exports.GlobalStyle = void 0;
+exports.InlineInput = exports.CardForm = exports.NewLaneButtons = exports.NewLaneSection = exports.LaneSection = exports.LaneTitle = exports.AddCardLink = exports.LeadPropTag = exports.LeadProp = exports.TagSpan = exports.Footer = exports.Detail = exports.CardRightContent = exports.CardTitle = exports.CardHeader = exports.MovableCardWrapper = exports.CardWrapper = exports.RightContent = exports.Title = exports.ScrollableLane = exports.LaneFooter = exports.LaneHeader = exports.Section = exports.Header = exports.BoardWrapper = exports.CustomPopoverContent = exports.CustomPopoverContainer = exports.GlobalStyle = void 0;
 
 var _taggedTemplateLiteral2 = _interopRequireDefault(require("@babel/runtime/helpers/taggedTemplateLiteral"));
 
@@ -15,7 +15,7 @@ var _reactPopopo = require("react-popopo");
 
 var _styledComponents = _interopRequireWildcard(require("styled-components"));
 
-var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7, _templateObject8, _templateObject9, _templateObject10, _templateObject11, _templateObject12, _templateObject13, _templateObject14, _templateObject15, _templateObject16, _templateObject17, _templateObject18, _templateObject19, _templateObject20, _templateObject21, _templateObject22, _templateObject23, _templateObject24, _templateObject25, _templateObject26, _templateObject27, _templateObject28, _templateObject29, _templateObject30;
+var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7, _templateObject8, _templateObject9, _templateObject10, _templateObject11, _templateObject12, _templateObject13, _templateObject14, _templateObject15, _templateObject16, _templateObject17, _templateObject18, _templateObject19, _templateObject20, _templateObject21, _templateObject22, _templateObject23, _templateObject24, _templateObject25, _templateObject26, _templateObject27, _templateObject28, _templateObject29, _templateObject30, _templateObject31;
 
 const GlobalStyle = (0, _styledComponents.createGlobalStyle)(_templateObject || (_templateObject = (0, _taggedTemplateLiteral2.default)(["\n  .comPlainTextContentEditable {\n    -webkit-user-modify: read-write-plaintext-only;\n    cursor: text;\n  }\n\n  .comPlainTextContentEditable--has-placeholder::before {\n    content: attr(placeholder);\n    opacity: 0.5;\n    color: inherit;\n    cursor: text;\n  }\n\n  .react_trello_dragClass {\n    transform: rotate(3deg);\n  }\n\n  .react_trello_dragLaneClass {\n    transform: rotate(3deg);\n  }\n\n  .icon-overflow-menu-horizontal:before {\n    content: \"\\E91F\";\n  }\n  .icon-lg, .icon-sm {\n    color: #798d99;\n  }\n  .icon-lg {\n    height: 32px;\n    font-size: 16px;\n    line-height: 32px;\n    width: 32px;\n  }\n"], ["\n  .comPlainTextContentEditable {\n    -webkit-user-modify: read-write-plaintext-only;\n    cursor: text;\n  }\n\n  .comPlainTextContentEditable--has-placeholder::before {\n    content: attr(placeholder);\n    opacity: 0.5;\n    color: inherit;\n    cursor: text;\n  }\n\n  .react_trello_dragClass {\n    transform: rotate(3deg);\n  }\n\n  .react_trello_dragLaneClass {\n    transform: rotate(3deg);\n  }\n\n  .icon-overflow-menu-horizontal:before {\n    content: \"\\\\E91F\";\n  }\n  .icon-lg, .icon-sm {\n    color: #798d99;\n  }\n  .icon-lg {\n    height: 32px;\n    font-size: 16px;\n    line-height: 32px;\n    width: 32px;\n  }\n"])));
 exports.GlobalStyle = GlobalStyle;
@@ -82,28 +82,32 @@ const LeadProp = _styledComponents.default.p(_templateObject22 || (_templateObje
 
 exports.LeadProp = LeadProp;
 
-const AddCardLink = _styledComponents.default.a(_templateObject23 || (_templateObject23 = (0, _taggedTemplateLiteral2.default)(["\n  border-radius: 0 0 3px 3px;\n  color: #838c91;\n  display: block;\n  padding: 5px 2px;\n  margin-top: 10px;\n  position: relative;\n  text-decoration: none;\n  cursor: pointer;\n\n  &:hover {\n    //background-color: #cdd2d4;\n    color: #4d4d4d;\n    text-decoration: underline;\n  }\n"])));
+const LeadPropTag = _styledComponents.default.p(_templateObject23 || (_templateObject23 = (0, _taggedTemplateLiteral2.default)(["\n  width: 30%;\n  display: inline-flex;\n"])));
+
+exports.LeadPropTag = LeadPropTag;
+
+const AddCardLink = _styledComponents.default.a(_templateObject24 || (_templateObject24 = (0, _taggedTemplateLiteral2.default)(["\n  border-radius: 0 0 3px 3px;\n  color: #838c91;\n  display: block;\n  padding: 5px 2px;\n  margin-top: 10px;\n  position: relative;\n  text-decoration: none;\n  cursor: pointer;\n\n  &:hover {\n    //background-color: #cdd2d4;\n    color: #4d4d4d;\n    text-decoration: underline;\n  }\n"])));
 
 exports.AddCardLink = AddCardLink;
 
-const LaneTitle = _styledComponents.default.div(_templateObject24 || (_templateObject24 = (0, _taggedTemplateLiteral2.default)(["\n  font-size: 15px;\n  width: 268px;\n  height: auto;\n"])));
+const LaneTitle = _styledComponents.default.div(_templateObject25 || (_templateObject25 = (0, _taggedTemplateLiteral2.default)(["\n  font-size: 15px;\n  width: 268px;\n  height: auto;\n"])));
 
 exports.LaneTitle = LaneTitle;
 
-const LaneSection = _styledComponents.default.section(_templateObject25 || (_templateObject25 = (0, _taggedTemplateLiteral2.default)(["\n  background-color: #2b6aa3;\n  border-radius: 3px;\n  margin: 5px;\n  position: relative;\n  padding: 5px;\n  display: inline-flex;\n  height: auto;\n  flex-direction: column;\n"])));
+const LaneSection = _styledComponents.default.section(_templateObject26 || (_templateObject26 = (0, _taggedTemplateLiteral2.default)(["\n  background-color: #2b6aa3;\n  border-radius: 3px;\n  margin: 5px;\n  position: relative;\n  padding: 5px;\n  display: inline-flex;\n  height: auto;\n  flex-direction: column;\n"])));
 
 exports.LaneSection = LaneSection;
-const NewLaneSection = (0, _styledComponents.default)(LaneSection)(_templateObject26 || (_templateObject26 = (0, _taggedTemplateLiteral2.default)(["\n  width: 200px;\n"])));
+const NewLaneSection = (0, _styledComponents.default)(LaneSection)(_templateObject27 || (_templateObject27 = (0, _taggedTemplateLiteral2.default)(["\n  width: 200px;\n"])));
 exports.NewLaneSection = NewLaneSection;
 
-const NewLaneButtons = _styledComponents.default.div(_templateObject27 || (_templateObject27 = (0, _taggedTemplateLiteral2.default)(["\n  margin-top: 10px;\n"])));
+const NewLaneButtons = _styledComponents.default.div(_templateObject28 || (_templateObject28 = (0, _taggedTemplateLiteral2.default)(["\n  margin-top: 10px;\n"])));
 
 exports.NewLaneButtons = NewLaneButtons;
 
-const CardForm = _styledComponents.default.div(_templateObject28 || (_templateObject28 = (0, _taggedTemplateLiteral2.default)(["\n  background-color: #e3e3e3;\n"])));
+const CardForm = _styledComponents.default.div(_templateObject29 || (_templateObject29 = (0, _taggedTemplateLiteral2.default)(["\n  background-color: #e3e3e3;\n"])));
 
 exports.CardForm = CardForm;
 
-const InlineInput = _styledComponents.default.textarea(_templateObject29 || (_templateObject29 = (0, _taggedTemplateLiteral2.default)(["\n  overflow-x: hidden; /* for Firefox (issue #5) */\n  word-wrap: break-word;\n  min-height: 18px;\n  max-height: 112px; /* optional, but recommended */\n  resize: none;\n  width: 100%;\n  height: 18px;\n  font-size: inherit;\n  font-weight: inherit;\n  line-height: inherit;\n  text-align: inherit;\n  background-color: transparent;\n  box-shadow: none;\n  box-sizing: border-box;\n  border-radius: 3px;\n  border: 0;\n  padding: 0 8px;\n  outline: 0;\n  ", " &:focus {\n    background-color: white;\n  }\n"])), props => props.border && (0, _styledComponents.css)(_templateObject30 || (_templateObject30 = (0, _taggedTemplateLiteral2.default)(["\n      &:focus {\n        box-shadow: inset 0 0 0 2px #0079bf;\n      }\n    "]))));
+const InlineInput = _styledComponents.default.textarea(_templateObject30 || (_templateObject30 = (0, _taggedTemplateLiteral2.default)(["\n  overflow-x: hidden; /* for Firefox (issue #5) */\n  word-wrap: break-word;\n  min-height: 18px;\n  max-height: 112px; /* optional, but recommended */\n  resize: none;\n  width: 100%;\n  height: 18px;\n  font-size: inherit;\n  font-weight: inherit;\n  line-height: inherit;\n  text-align: inherit;\n  background-color: transparent;\n  box-shadow: none;\n  box-sizing: border-box;\n  border-radius: 3px;\n  border: 0;\n  padding: 0 8px;\n  outline: 0;\n  ", " &:focus {\n    background-color: white;\n  }\n"])), props => props.border && (0, _styledComponents.css)(_templateObject31 || (_templateObject31 = (0, _taggedTemplateLiteral2.default)(["\n      &:focus {\n        box-shadow: inset 0 0 0 2px #0079bf;\n      }\n    "]))));
 
 exports.InlineInput = InlineInput;

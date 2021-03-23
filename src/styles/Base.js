@@ -218,6 +218,11 @@ export const LeadProp = styled.p`
   margin-bottom: 0;
 `
 
+export const LeadPropTag = styled.p`
+  width: 30%;
+  display: inline-flex;
+`
+
 export const AddCardLink = styled.a`
   border-radius: 0 0 3px 3px;
   color: #838c91;

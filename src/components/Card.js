@@ -8,7 +8,8 @@ import {
   CardTitle,
   Detail,
     Footer,
-  LeadProp
+    LeadProp,
+    LeadPropTag
 } from 'rt/styles/Base'
 import InlineInput from 'rt/widgets/InlineInput'
 import Tag from './Card/Tag'
@@ -61,8 +62,8 @@ class Card extends Component {
           {showDeleteButton && <DeleteButton onClick={this.onDelete} />}
         </CardHeader>
         <Detail>
-                <LeadProp><b>Produkt:</b>{product}</LeadProp>
-                <LeadProp><b>Preis:</b>{price}</LeadProp>
+                <LeadProp><LeadPropTag>Produkt:</LeadPropTag>{product}</LeadProp>
+                <LeadProp><LeadPropTag>Preis:</LeadPropTag>{price}</LeadProp>
         </Detail>
         {tags && tags.length> 0 && (
           <Footer>
