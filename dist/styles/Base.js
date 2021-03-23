@@ -82,7 +82,7 @@ const LeadProp = _styledComponents.default.p(_templateObject22 || (_templateObje
 
 exports.LeadProp = LeadProp;
 
-const LeadPropTag = _styledComponents.default.p(_templateObject23 || (_templateObject23 = (0, _taggedTemplateLiteral2.default)(["\n  width: 30%;\n  display: inline-flex;\n"])));
+const LeadPropTag = _styledComponents.default.b(_templateObject23 || (_templateObject23 = (0, _taggedTemplateLiteral2.default)(["\n  width: 30%;\n  display: inline-flex;\n"])));
 
 exports.LeadPropTag = LeadPropTag;
 

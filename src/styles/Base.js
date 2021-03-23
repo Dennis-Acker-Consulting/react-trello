@@ -218,7 +218,7 @@ export const LeadProp = styled.p`
   margin-bottom: 0;
 `
 
-export const LeadPropTag = styled.p`
+export const LeadPropTag = styled.b`
   width: 30%;
   display: inline-flex;
 `
