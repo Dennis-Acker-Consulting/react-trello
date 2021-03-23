@@ -96,7 +96,7 @@ class Card extends _react.Component {
       onSave: value => updateCard({
         description: value
       })
-    }) : description, description2), tags && tags.length > 0 && /*#__PURE__*/_react.default.createElement(_Base.Footer, null, tags.map(tag => /*#__PURE__*/_react.default.createElement(_Tag.default, (0, _extends2.default)({
+    }) : description, /*#__PURE__*/_react.default.createElement("p", null, description2)), tags && tags.length > 0 && /*#__PURE__*/_react.default.createElement(_Base.Footer, null, tags.map(tag => /*#__PURE__*/_react.default.createElement(_Tag.default, (0, _extends2.default)({
       key: tag.title
     }, tag, {
       tagStyle: tagStyle
