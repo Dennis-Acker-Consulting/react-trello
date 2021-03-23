@@ -50,8 +50,8 @@ class Card extends _react.Component {
           id = _this$props.id,
           title = _this$props.title,
           label = _this$props.label,
-          description = _this$props.description,
-          description2 = _this$props.description2,
+          product = _this$props.product,
+          price = _this$props.price,
           tags = _this$props.tags,
           cardDraggable = _this$props.cardDraggable,
           editable = _this$props.editable,
@@ -88,15 +88,7 @@ class Card extends _react.Component {
       })
     }) : label), showDeleteButton && /*#__PURE__*/_react.default.createElement(_DeleteButton.default, {
       onClick: this.onDelete
-    })), /*#__PURE__*/_react.default.createElement(_Base.Detail, null, editable ? /*#__PURE__*/_react.default.createElement(_InlineInput.default, {
-      value: description,
-      border: true,
-      placeholder: t('placeholder.description'),
-      resize: "vertical",
-      onSave: value => updateCard({
-        description: value
-      })
-    }) : description, /*#__PURE__*/_react.default.createElement("p", null, description2)), tags && tags.length > 0 && /*#__PURE__*/_react.default.createElement(_Base.Footer, null, tags.map(tag => /*#__PURE__*/_react.default.createElement(_Tag.default, (0, _extends2.default)({
+    })), /*#__PURE__*/_react.default.createElement(_Base.Detail, null, /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("b", null, "Produkt:"), product), /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("b", null, "Preis:"), price)), tags && tags.length > 0 && /*#__PURE__*/_react.default.createElement(_Base.Footer, null, tags.map(tag => /*#__PURE__*/_react.default.createElement(_Tag.default, (0, _extends2.default)({
       key: tag.title
     }, tag, {
       tagStyle: tagStyle
@@ -115,8 +107,8 @@ Card.propTypes = {
   id: _propTypes.default.string.isRequired,
   title: _propTypes.default.string.isRequired,
   label: _propTypes.default.string,
-  description: _propTypes.default.string,
-  description2: _propTypes.default.string,
+  product: _propTypes.default.string,
+  price: _propTypes.default.string,
   tags: _propTypes.default.array
 };
 Card.defaultProps = {
